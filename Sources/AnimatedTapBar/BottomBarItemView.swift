@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public struct TapBarItemView: View {
+struct TapBarItemView: View {
     
     @Binding var activeIndex : Int
     var index : Int
