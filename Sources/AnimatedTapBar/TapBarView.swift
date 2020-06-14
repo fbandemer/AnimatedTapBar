@@ -12,7 +12,7 @@ struct TapBarView : View {
     @Binding var activeIndex: Int
     var items: [TapBarItem]
     
-    var style = TapBarStyle(animationType: Animation.default, backgroundColor: .white, cornerRadius: 30, shadowColor: .black, shadowRadius: 10, unselectedColor: .primary)
+    var style : TapBarStyle
     
     public var body: some View {
         HStack(alignment: .bottom) {
