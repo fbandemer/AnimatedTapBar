@@ -40,14 +40,24 @@ dependencies: [
 import SwiftUI
 
 struct ExampleView: View {
-    let items : [BottomBarItem] = [
-        TapBarItem(icon: Image(systemName: "person.fill"), title: "Person", color: .green, view: AnyView(View1())),
-        TapBarItem(icon: Image(systemName: "house.fill"), title: "House", color: .blue, view: AnyView(View2())),
-        TapBarItem(icon: Image(systemName: "desktopcomputer"), title: "Desktop", color: .red, view: AnyView(View3())),
-        TapBarItem(icon: Image(systemName: "headphones"), title: "Desktop", color: .purple, view: AnyView(View4()))]
+    
+    let items : [TapBarItem] = [
+    TapBarItem(icon: Image(systemName: "person.fill"), title: "Person", color: .green, view: AnyView(View1())),
+    TapBarItem(icon: Image(systemName: "house.fill"), title: "House", color: .blue, view: AnyView(View2())),
+    TapBarItem(icon: Image(systemName: "desktopcomputer"), title: "Desktop", color: .red, view: AnyView(View3())),
+    TapBarItem(icon: Image(systemName: "headphones"), title: "Desktop", color: .purple, view: AnyView(View4()))
+    ]
+    
+    var style = TapBarStyle(
+        animationType: .default,
+        backgroundColor: .white,
+        cornerRadius: 30,
+        shadowColor: .black,
+        shadowRadius: 10,
+        unselectedColor: .black)
     
     var body: some View {
-        AnimatedTapBar(tapBarItems: items)
+        AnimatedTapBar(items: items, style: style)
     }
 }
 ```
