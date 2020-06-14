@@ -10,8 +10,12 @@ import SwiftUI
 public struct AnimatedTapBar: View {
     @State private var activeIndex: Int = 0
     var tapBarItems : [TapBarItem]
+    
+    public init(items: [TapBarItem]) {
+        self.tapBarItems = items
+    }
 
-    var body: some View {
+    public var body: some View {
         ZStack(alignment: .top) {
             tapBarItems[activeIndex].view
             VStack {

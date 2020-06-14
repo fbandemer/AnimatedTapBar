@@ -15,5 +15,14 @@ public struct TapBarStyle {
     var shadowColor : Color
     var shadowRadius: CGFloat
     var unselectedColor : Color
+    
+    public init(animationType: Animation, backgroundColor: Color, cornerRadius: CGFloat, shadowColor: Color, shadowRadius: CGFloat, unselectedColor: Color) {
+        self.animationType = animationType
+        self.backgroundColor = backgroundColor
+        self.cornerRadius = cornerRadius
+        self.shadowColor = shadowColor
+        self.shadowRadius = shadowRadius
+        self.unselectedColor = unselectedColor
+    }
 }
 
