@@ -6,6 +6,7 @@
 //
 import SwiftUI
 
+@available(iOS 13.0, *)
 struct AnimatedTapBar: View {
     @State private var activeIndex: Int = 0
     var tapBarItems : [TapBarItem]

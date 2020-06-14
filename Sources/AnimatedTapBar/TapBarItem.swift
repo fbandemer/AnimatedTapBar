@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 struct TapBarItem: Identifiable {
     var id = UUID()
     var icon : Image

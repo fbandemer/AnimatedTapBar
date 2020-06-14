@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 struct TapBarStyle {
     var animationType : Animation
     var backgroundColor : Color
